@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/level.css">
+    <title>Platformer</title>
+
+    <script src="levelBuilder.js"></script>
+</head>
+
+<body onload="setBoard(
+    [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 9, 3, 9, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 4, 4, 6, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 4, 6, 4, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 6, 4, 4, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 9, 1, 9, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 4, 4, 4, 4, 6, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 4, 4, 4, 6, 4, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 9, 4, 6, 4, 9, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 4, 6, 4, 4, 4, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 6, 4, 4, 4, 4, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 6, 4, 4, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 4, 4, 6, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, '2', 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])">
+    <div class="container">
+        <a class="toMenu" href="../index.html">&#9776</a>
+        <div class="gameWindow">
+            <div id="board">
+            </div>
+        </div>
+        <div id="flash"></div>
+        <span id="timer">0.00</span>
+    </div>
+    <div id="winContainer">
+        <div id="win">
+            <h1>You win!</h1>
+            <div class="options">
+                <div class="timeContainer"><span id="time">Time: </span><span id="record"></span></div>
+                <button onclick="mainMenu()">Main menu</button>
+                <button onclick="nextLevel()">Next level</button>
+                <button onclick="retry()">Try again</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

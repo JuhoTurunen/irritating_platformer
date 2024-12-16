@@ -1,0 +1,192 @@
+.gameWindow {
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    width: 904px;
+    height: 904px;
+    margin: -452px;
+    border: 2px solid black;
+    box-shadow: 0 0 20px 2px black inset;
+}
+
+#board {
+    position: relative;
+    display: table;
+    height: 900px;
+    width: 900px;
+    z-index: -1;
+}
+
+#flash {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.103);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+#winContainer {
+    display: none;
+    background-color: rgb(173, 216, 230);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
+}
+
+#win {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.103);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -175px -250px;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(220, 247, 255);
+    z-index: 16;
+    padding: 20px;
+    border-radius: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+}
+
+#win h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#win .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.timeContainer {
+    margin: 3px;
+    display: block;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#time {
+    display: block;
+    font-size: 40px;
+}
+
+#record {
+    color: limegreen;
+    font-size: 20px;
+}
+
+.options button {
+    display: block;
+    font-size: 30px;
+    margin: 3px;
+    flex-basis: 40%;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.options button:hover {
+    background-color: rgb(88, 216, 255);
+    color: black;
+    cursor: pointer;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    position: relative;
+    border: none;
+}
+
+#wall {
+    background-color: #222;
+    box-shadow: 2px 2px 15px 0px #222;
+    border: none;
+    position: relative;
+    z-index: 3;
+}
+
+#air {
+    background-color: rgb(221, 221, 221);
+}
+
+#goal {
+    background-color: lime;
+    box-shadow: inset -25px -25px 50px -20px rgb(0, 204, 0), inset 25px 25px 50px -15px rgb(0, 214, 0), 0 0 80px -1px rgb(60, 255, 60);
+    position: relative;
+    z-index: 2;
+}
+
+#start {
+    background-color: cyan;
+    box-shadow: inset -25px -25px 50px -20px rgb(0, 206, 206), inset 25px 25px 50px -15px rgb(0, 221, 221), 0 0 80px -1px cyan;
+    position: relative;
+    z-index: 2;
+}
+
+#path {
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0 0 3px 3px rgb(207, 207, 207);
+    position: relative;
+    z-index: 1;
+}
+
+#gate {
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#player {
+    background-color: rgb(23, 23, 255);
+    box-shadow: inset -25px -23px 40px -20px darkblue, inset 25px 25px 40px -15px rgb(62, 62, 255), 4px 5px 10px -5px #111;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65%;
+    width: 65%;
+    margin: -32.5%;
+    border-radius: 50%;
+}
+
+#enemy {
+    background-color: red;
+    box-shadow: inset -25px -23px 40px -20px rgb(66, 0, 0), inset 25px 25px 40px -15px rgb(255, 56, 56), 4px 5px 10px -5px #111;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65%;
+    width: 65%;
+    margin: -32.5%;
+    border-radius: 50%;
+}
+
+#lava {
+    background-color: orange;
+    box-shadow: inset -25px -25px 50px -20px rgb(255, 56, 56), inset 25px 25px 50px -15px darkred, 0 0 30px -1px rgb(240, 136, 0);
+    position: relative;
+    z-index: 2;
+}

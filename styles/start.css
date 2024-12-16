@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    height: 550px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -275px;
+    margin-left: -400px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: rgb(220, 247, 255);
+    box-shadow: 5px 5px 20px rgb(117, 163, 180);
+}
+
+h1 {
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgb(72, 103, 114);
+}
+
+p {
+    user-select: none;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(72, 103, 114);
+}
+
+a {
+    user-select: none;
+    text-decoration: none;
+}
+
+button {
+    user-select: none;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    font-size: 40px;
+    padding: 7px 15px;
+    background-color: blue;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 131);
+    box-shadow: 2px 2px 15px rgb(94, 134, 148), 1px 1px 5px rgb(0, 0, 156) inset;
+    text-shadow: 1px 1px 2px rgb(72, 103, 114);
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    background-color: rgb(174, 216, 255);
+    box-shadow: 2px 2px 5px rgb(94, 134, 148), 1px 1px 5px rgb(125, 189, 248) inset;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.copyright {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    height: 20px;
+    width: 400px;
+    margin: -25px -200px;
+    text-align: center;
+}

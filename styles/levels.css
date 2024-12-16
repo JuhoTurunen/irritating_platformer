@@ -1,0 +1,132 @@
+.levelContainer {
+    width: 900px;
+    height: 800px;
+    position: absolute;
+    border-radius: 100px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -400px -450px;
+    border: 2px solid black;
+    background-color: rgb(220, 247, 255);
+    box-shadow: 5px 5px 20px rgb(117, 163, 180);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    user-select: none;
+    font-size: 100px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.bigTitle {
+    text-shadow: 1px 1px 3px rgb(72, 103, 114);
+}
+
+.flexLevels {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.level {
+    color: rgb(43, 43, 43);
+    background-color: lightblue;
+    width: 120px;
+    height: 120px;
+    margin: 40px;
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.level:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(195, 235, 248);
+}
+
+.level span {
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px;
+    text-align: center;
+    font-size: 80px;
+}
+
+#info {
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+    width: 400px;
+    height: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -85px -200px;
+    background-color: rgb(220, 247, 255);
+    border-radius: 60px;
+    border: 1px solid black;
+    box-shadow: 0 0 200px rgb(0, 0, 0);
+    padding: 20px;
+}
+
+#info h1 {
+    user-select: none;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#close {
+    user-select: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#time {
+    user-select: none;
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 3px;
+}
+
+#info button {
+    user-select: none;
+    float: right;
+    font-size: 20px;
+    padding: 5px;
+    height: 40px;
+    width: 110px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.resetLevels {
+    background-color: rgb(255, 139, 139);
+    border: 2px solid red;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}

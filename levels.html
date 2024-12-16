@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/levels.css">
+    <script src="levelSelector.js"></script>
+    <title>Platformer</title>
+</head>
+
+<body onload="pageLoaded()">
+    <div class="container">
+        <a class="toMenu" href="index.html">&#9776</a>
+        <div class="levelContainer">
+            <h1 class="bigTitle">Levels</h1> 
+            <div class="flexLevels">
+                <button class="level" onclick="isBeat(this)"><span>1</span></button>
+                <button class="level" onclick="isBeat(this)"><span>2</span></button>
+                <button class="level" onclick="isBeat(this)"><span>3</span></button>
+                <button class="level" onclick="isBeat(this)"><span>4</span></button>
+                <button class="level" onclick="isBeat(this)"><span>5</span></button>
+                <button class="level" onclick="isBeat(this)"><span>6</span></button>
+                <button class="level" onclick="isBeat(this)"><span>7</span></button> 
+                <button class="level" onclick="isBeat(this)"><span>8</span></button>
+                <button class="level" onclick="isBeat(this)"><span>9</span></button>
+                <button class="level" onclick="isBeat(this)"><span>10</span></button>
+            </div>
+            <button onclick="resetLevels()" class="resetLevels">Reset Progress</button>
+        </div>
+        <div id="info">
+            <h1 id="title"></h1>
+            <span id="close" onclick="closeWindow()">&#9932</span>
+            <span id="time"></span>
+            <button id="playLevel"></button>
+        </div>
+    </div>
+</body>
+
+</html>

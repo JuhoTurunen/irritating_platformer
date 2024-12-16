@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    z-index: -2;
+    background-color: rgb(173, 216, 230);
+}
+
+.container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.toMenu {
+    user-select: none;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 20px;
+    top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 20;
+    text-shadow: 0px 0px 40px rgb(0, 191, 255);
+}
+
+#timer {
+    user-select: none;
+    position: absolute;
+    height: 40px;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 20;
+    text-shadow: 0px 0px 40px rgb(0, 191, 255);
+}
